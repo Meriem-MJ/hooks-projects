@@ -1,9 +1,13 @@
+import React, { useState } from 'react';
+import Header from './Components/Header';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
+  const [movieList, setmovieList] = useState()
   return (
     <div className="App">
-     <h1></h1>
+     <Header/>
     </div>
   );
 }
