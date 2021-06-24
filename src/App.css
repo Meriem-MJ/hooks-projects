@@ -1,4 +1,14 @@
+body{
+    background-color: #141414 !important;
+}
+
 /*******************HEADER*******************/
+
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    z-index: 100;
+}
 .navbar-brand{
     color: white !important;
     margin: 10px;
@@ -11,4 +21,15 @@
 }
 .btn-outline-success{
     margin-right: 20px;
+}
+
+/******************MovieList******************/
+
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100px;
 }
