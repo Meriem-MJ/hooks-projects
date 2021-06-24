@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Card, CardImg } from 'reactstrap';
-import MovieModal from './MovieModal';
+import MovieModalgit  from './MovieModal';
 import img from '../add.png';
 
 function AddAMovie(handleAdd) {
