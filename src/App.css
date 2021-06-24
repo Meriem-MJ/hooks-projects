@@ -33,3 +33,8 @@ body{
     position: absolute;
     margin-top: 100px;
 }
+
+/******************ADD***********************/
+.add{
+    position: relative;
+}
