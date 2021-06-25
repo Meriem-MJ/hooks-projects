@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import MovieCard from './MovieCard';
 
 function MovieList(props) {
     return (
-        <div className='container-fluid'>
-         {props.movieList.map((movie, index)=> 
-         <div className='d-flex justify-content-start m-3'>
-             <img src={movie.Poster} alt='movie'></img>
+        <div className='container1'>
+         {props.movieList.map((movie, key)=> 
+         <div>
+             <MovieCard movie={movie} key={key} />
          </div>)}   
         </div>
     )

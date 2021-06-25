@@ -12,9 +12,9 @@ import {
 
 const MovieModal = ({ isOpen, toggle, handleAdd }) => {
   const [newMovie, setNewMovie] = useState({
-    title: ``,
-    description: ``,
-    urlPoster: ``,
+    Title: ``,
+    Description: ``,
+    Poster: ``,
     rate: 0,
   });
   const onChangeHandler = (e) =>
@@ -34,7 +34,7 @@ const MovieModal = ({ isOpen, toggle, handleAdd }) => {
             </Label>
             <Input
               type='text'
-              name='title'
+              name='Title'
               placeholder='movie title'
               onChange={onChangeHandler}
             />
@@ -45,7 +45,7 @@ const MovieModal = ({ isOpen, toggle, handleAdd }) => {
             </Label>
             <Input
               type='url'
-              name='posterUrl'
+              name='Poster'
               placeholder='poster link '
               onChange={onChangeHandler}
             />
@@ -56,7 +56,7 @@ const MovieModal = ({ isOpen, toggle, handleAdd }) => {
             </Label>
             <Input
               type='textarea'
-              name='description'
+              name='Description'
               placeholder='movie description '
               onChange={onChangeHandler}
             />
@@ -83,7 +83,7 @@ const MovieModal = ({ isOpen, toggle, handleAdd }) => {
           >
             Add
           </Button>{' '}
-          <Button color='secondary' onClick={toggle}>
+          <Button color='danger' onClick={toggle}>
             Cancel
           </Button>
         </ModalFooter>

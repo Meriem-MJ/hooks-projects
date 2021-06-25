@@ -3,16 +3,16 @@ import { Card, CardImg } from 'reactstrap';
 import MovieModal  from './MovieModal';
 import img from '../add.png';
 
-function AddAMovie(handleAdd) {
+const AddAMovie = ({handleAdd}) => {
     const [show, setShow] = useState(false);
     const toggleShow = () => setShow(!show);
     return (
-    <div className='add'>
+    <div className="add">
       <Card onClick={() => setShow(true)}>
         <CardImg
-          style={{ height: `200px` }}
+          style={{ height: `100`}}
           src={img}
-          alt='Card image cap'
+          alt='movie poster'
         />
       </Card>
       {show && (
