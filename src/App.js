@@ -88,7 +88,7 @@ function App() {
     }, [searchValue]);
 
     return (
-    <div>
+    <div className='firstContainer'>
      <Filter searchValue={searchValue} setSearchValue={setSearchValue} ratingSearch={ratingSearch} setRatingSearch={setRatingSearch}/>
  
      <MovieList movieList={movieList} moviesArray={

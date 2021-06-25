@@ -2,6 +2,11 @@ body{
     background-color: #141414 !important;
 }
 
+.firstcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .navbar{
     position: fixed !important;
